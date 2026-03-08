@@ -108,7 +108,7 @@ const Home = () => {
 
           <img
 
-            src="src/assets/profilePhoto.png"
+            src="/profilePhoto.png"
 
             alt="avatar"
 

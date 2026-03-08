@@ -9,7 +9,7 @@ function Projects() {
         {
             title: "Travel Booking Website",
             description: "A modern travel booking platform that allows users to browse destinations, plan trips, and book travel packages easily. It features a responsive UI, secure backend APIs, and a MongoDB database for managing users and bookings.",
-            image:"/src/assets/website.png",
+            image:"/website.png",
             tech: ["React", "Node.js", "MongoDb"],
             github: "https://github.com/Amit7831/Travel_Booking_System",
             live: "",

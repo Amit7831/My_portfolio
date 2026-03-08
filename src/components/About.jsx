@@ -66,7 +66,7 @@ const About = () => {
 
           <div className='md:col-span-1'>
             <div className=' bg-white p-6 rounded-2xl shadow-sm border border-gray-300 sticky top-8'>
-              <motion.img src="src/assets/profilePhoto.png"
+              <motion.img src="/profilePhoto.png"
                 alt="Amitranjan"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}

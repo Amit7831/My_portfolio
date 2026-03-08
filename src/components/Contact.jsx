@@ -8,27 +8,27 @@ import { useRef } from 'react';
 
 function Contact() {
     const form = useRef();
-    
+
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(
-           "service_6w4nl2c",
-            "template_m1x7f1i",
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
             form.current,
-            "fAHjKC5ic8Pb8xwVS"
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         ).then(
-            () => { 
+            () => {
                 alert("Message Sent Successfully");
                 form.current.reset();
 
             },
             () => {
                 alert("Faild to send message");
-                
+
             }
 
         );
-        
+
     }
     return (
         <section className='min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-[#7900ff] via-[#548cff] to-[#93ffd8] text-white px-6 py-16'>
@@ -78,7 +78,7 @@ function Contact() {
                                 amitranjanmalik2003@gmail.com
                             </p>
                             <p className='flex items-center gap-3'>
-                                 <FaPhoneAlt className='text-green-400'/>
+                                <FaPhoneAlt className='text-green-400' />
                                 +91 9861373578
                             </p>
                             <p>
@@ -90,18 +90,18 @@ function Contact() {
 
                     <div className='m'>
                         <h3 className='text-xl mb-4 font-semibold'>
-                        Contact with Me
+                            Contact with Me
                         </h3>
                         <div className='flex gap-5 text-xl'>
                             <a href="https://github.com/Amit7831"
                                 className='hover:text-green-400 transition transform hover:scale-110'>
-                                <FaGithub/>
+                                <FaGithub />
                             </a>
                             <a href="https://www.linkedin.com/in/amitranjan-malik-11a600397"
                                 className='hover:text-green-400 transition transform hover:scale-110'>
-                                <FaLinkedin/>
+                                <FaLinkedin />
                             </a>
-                          
+
                         </div>
                     </div>
                 </div>
